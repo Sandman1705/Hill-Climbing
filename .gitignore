@@ -1,1 +1,4 @@
 scripts/__pycache__/*
+scripts/*.png
+src/__pycache__/*
+src/*.png
