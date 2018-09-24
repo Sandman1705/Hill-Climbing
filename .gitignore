@@ -2,4 +2,6 @@ scripts/__pycache__/*
 scripts/*.png
 src/__pycache__/*
 src/*.png
+jupyter/.ipynb_checkpoints/
+jupyter/*.png
 
