@@ -63,7 +63,7 @@ def swapped_cities_generator(tour):
 			swap[i],swap[j]=tour[j],tour[i]
 			yield swap
 
-def draw_tour(coords,tour,title="",img_file="tsp.png",scale=1000,margin=20,city_scale=1.0,ssaa=2.0):
+def draw_tour(coords,tour,title="",img_file="tsp.png",scale=1000,margin=20,city_scale=1.0,ssaa=2.0,draw_city_id=True):
 	cs = ssaa*city_scale
 	coords = [(x*scale*ssaa+margin*ssaa, y*scale*ssaa+margin*ssaa) for (x,y) in coords]
 	max_x = np.max([x for (x,y) in coords])
@@ -84,7 +84,8 @@ def draw_tour(coords,tour,title="",img_file="tsp.png",scale=1000,margin=20,city_
 		x1,y1 = coords[tour[i]]
 		x2,y2 = coords[tour[j]]
 		draw.line((int(x1),int(y1),int(x2),int(y2)),fill=(0,0,0))
-		draw.text((int(x1)+10*cs,int(y1)-8*cs),str(i),font=font,fill=(32,32,32))
+		if draw_city_id:
+			draw.text((int(x1)+10*cs,int(y1)-8*cs),str(i),font=font,fill=(32,32,32))
 
 	for x,y in coords:
 		x,y=int(x),int(y)

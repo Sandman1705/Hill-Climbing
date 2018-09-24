@@ -2,6 +2,8 @@
 
 Various implementations of [Hill climbing algorithm](https://en.wikipedia.org/wiki/Hill_climbing)
 
+Preview of TSP soulution [YouTube video](https://www.youtube.com/watch?v=Icq6pysZqls)
+
 ## Requirements:
 
 This project was written entirely in Python (Python 3). The following python libraries and moduls were used:
