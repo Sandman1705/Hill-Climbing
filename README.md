@@ -2,7 +2,7 @@
 
 Various implementations of [Hill climbing algorithm](https://en.wikipedia.org/wiki/Hill_climbing)
 
-Preview of TSP soulution [YouTube video](https://www.youtube.com/watch?v=Icq6pysZqls)
+Preview of TSP soulution: [YouTube video](https://www.youtube.com/watch?v=Icq6pysZqls)
 
 ## Requirements:
 

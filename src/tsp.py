@@ -184,7 +184,7 @@ def tsp_hillclimb_restart(init_function,evaluation_function,next_generator,max_i
 
 
 def tsp_hillclimb_restart_overall_iterations(init_function,evaluation_function,next_generator,max_iterations=100000,\
-											 restart_limit=None,verbose=False):
+											 restart_limit=None,verbose=0):
 
 	curr_tour = None
 	curr_eval = float("inf")
